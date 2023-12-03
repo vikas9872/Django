@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Appointment</title>
+</head>
+<body class="appointmentbody">
+    <section class="appointmentbookingpage">  
+        <video autoplay muted plays-inline>
+            <source src="{% static 'Ambulance.mp4' %}" type="video/mp4">
+        </video>
+    </section>
+    <section class="appointmentbookingsection">
+        <form action="makeappointment" class="formarea" method="post">
+            {% csrf_token %}
+            <section class="heading">
+                <h1>APPOINTMENT</h1>
+                <span>
+                    <h1 class="secondhalfheading">FORM</h1>
+                </span>
+            </section>
+            <br>
+            <label for="firstname">First Name</label>
+            <section>
+                <input type="text" name="firstname" id="firstnameid" class="inputclass">
+            </section>
+            <br>
+            <label for="lastname">Lastname</label>
+            <section>
+                <input type="text" name="lastname" id="lastnameid" class="inputclass">
+            </section>
+            <br>
+            <label for="age">Age</label>
+            <section>    
+                <input type="number" name="age" id="ageid" class="inputclass">
+            </section>
+            <br>
+            <label for="date">Date</label>
+            <section>
+                <input type="date" name="doa" id="doaid" style="width: 250px;">
+            </section>
+            <br>
+            <section>
+                <button class="bookappointment">Book an appointment</button>
+            </section>
+        </form>
+    </section>
+</body>
+</html>

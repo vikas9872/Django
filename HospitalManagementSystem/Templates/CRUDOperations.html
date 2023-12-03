@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <section class="viewdetailsbody">
+        <section class="heading">
+            <h1>DETAILS OF PATIENTS</h1>
+        </section>
+        <table class="patientdetailstable">
+            <thead class="tablehead">
+                <tr style="background-color: rgb(78, 172, 227);">
+                    <th>Patient id</th>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Age</th>
+                    <th>Edit details</th>
+                    <th>Delete details</th>
+                </tr>
+            </thead>
+            {% for p in patient %}
+            <tbody>
+                <tr>
+                    <td>{{p.id}}</td>
+                    <td>{{p.fname}}</td>
+                    <td>{{p.lname}}</td>
+                    <td>{{p.age}}</td>
+                    <td>
+                        <a href="updatedetails/{{p.id}}"><button class="btnicon"><img src="{% static 'editicon.png' %}" alt="image cannot be displayed" class="dicon"></button></a>
+                    </td> 
+                    <td>
+                        <a href="deletedetails/{{p.id}}"><button class="btnicon"><img src="{% static 'deleteicon.png' %}" alt="image cannot be displayed" class="dicon"></button></a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

@@ -1,0 +1,179 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Hospital Management System</title>
+</head>
+
+<body>
+    {% include 'hmsheader.html' %}
+    <section class="homepage" id="homepageid">
+        <section class="homepageleft">
+            <video autoplay muted plays-inline>
+                <source src="{% static 'hospitalbuilding.mp4' %}" type="video/mp4">
+            </video>
+        </section>
+        <section class="homepageright">
+            <h1>stay SAFE, stay HEALTHY</h1>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure libero officia nihil
+                aperiam pariatur
+                eligendi inventore nesciunt dolore a nisi repellat Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Tempore, corporis.</p>
+            <form action="toappointment">
+                <button class="appointment">Make an appointment</button>
+            </form>
+        </section>
+    </section>     
+    <section class="aboutuspage" id="aboutuspageid">
+        <section class="aboutuspageup">
+            <h1>ABOUT</h1>
+            <h1 class="headingsecondpart">US</h1>
+        </section>
+        <section class="aboutuspagedown">
+            <section class="aboutuspagedownleft">
+                <video autoplay muted plays-inline infinite>
+                    <source src="{% static 'aboutus.mp4' %}" type="video/mp4">
+                </video>
+            </section>
+            <section class="aboutuspagedownright">
+                <h1 class="mainpart">your HEALTH, our PRIORITY</h1>
+                <p class="contentpart">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatibus
+                    eligendi rem
+                    perspiciatis dignissimos nam eos, laborum doloremque pariatur voluptates. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Repellendus iure eos tenetur qui facere officia soluta cumque illum,
+                    veniam distinctio aliquid quas laborum ad enim magnam inventore nulla, impedit tempora.</p>
+            </section>
+        </section>
+    </section>
+    <section class="servicespage" id="servicepageid">
+        <section class="servicespageup">
+            <h1>OUR</h1>
+            <h1 class="headingsecondpart">SERVICES</h1>
+        </section>
+        <section class="servicespagedown">
+            <section class="services">
+                <section class="servicesup">
+                    <img src="{% static 'medicalservicelogo.png' %}" alt="Image cannot be displayed" class="servicesimage">
+                </section>
+                <section class="servicesdown">
+                    <h1 class="serviceinfo">Emergency Care</h1>
+                </section>
+            </section>
+            <section class="services">
+                <section class="servicesup">
+                    <img src="{% static 'fulltimeservicelogo.png' %}" alt="Image cannot be displayed" class="servicesimage">
+                </section>
+                <section class="servicesdown">
+                    <h1 class="serviceinfo">27/7 Service</h1>
+                </section>
+            </section>
+            <section class="services">
+                <section class="servicesup">
+                    <img src="{% static 'laboratorylogo.png' %}" alt="Image cannot be displayed" class="servicesimage">
+                </section>
+                <section class="servicesdown">
+                    <h1 class="serviceinfo">Equipped Laboratory</h1>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="doctorspage" id="doctorspageid">
+        <section class="doctorspageup">
+            <h1>OUR</h1>
+            <h1 class="headingsecondpart">DOCTORS</h1>
+        </section>
+        <section class="doctorspagedown">
+            <section class="doctors">
+                <section class="doctorsup">
+                    <img src="{% static 'personlogo.png' %}" alt="Image cannot be displayed" class="doctorsimages">
+                </section>
+                <section class="doctorsmid">
+                    <p>Mr. Abc</p>
+                    <p>Dermatologist</p>
+                </section>
+                <section class="doctorsdown">
+                    <img src="{% static 'gmaillogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                    <img src="{% static 'instagramlogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                    <img src="{% static 'twitterXlogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                </section>
+            </section>
+            <section class="doctors">
+                <section class="doctorsup">
+                    <img src="{% static 'personlogo.png' %}" alt="Image cannot be displayed" class="doctorsimages">
+                </section>
+                <section class="doctorsmid">
+                    <p>Mrs. Abc</p>
+                    <p>Neurologist</p>
+                </section>
+                <section class="doctorsdown">
+                    <img src="{% static 'gmaillogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                    <img src="{% static 'instagramlogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                    <img src="{% static 'twitterXlogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                </section>
+            </section>
+            <section class="doctors">
+                <section class="doctorsup">
+                    <img src="{% static 'personlogo.png' %}" alt="Image cannot be displayed" class="doctorsimages">
+                </section>
+                <section class="doctorsmid">
+                    <p>Ms. Abc</p>
+                    <p>Surgeon</p>
+                </section>
+                <section class="doctorsdown">
+                    <img src="{% static 'gmaillogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                    <img src="{% static 'instagramlogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                    <img src="{% static 'twitterXlogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                </section>
+            </section>
+            <section class="doctors">
+                <section class="doctorsup">
+                    <img src="{% static 'personlogo.png' %}" alt="Image cannot be displayed" class="doctorsimages">
+                </section>
+                <section class="doctorsmid">
+                    <p>Mr. Abc</p>
+                    <p>Psychiatrist</p>
+                </section>
+                <section class="doctorsdown">
+                    <img src="{% static 'gmaillogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                    <img src="{% static 'instagramlogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                    <img src="{% static 'twitterXlogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                </section>
+            </section>
+            <section class="doctors">
+                <section class="doctorsup">
+                    <img src="{% static 'personlogo.png' %}" alt="Image cannot be displayed" class="doctorsimages">
+                </section>
+                <section class="doctorsmid">
+                    <p>Mrs. Abc</p>
+                    <p>Pediatrician</p>
+                </section>
+                <section class="doctorsdown">
+                    <img src="{% static 'gmaillogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                    <img src="{% static 'instagramlogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                    <img src="{% static 'twitterXlogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                </section>
+            </section>
+            <section class="doctors">
+                <section class="doctorsup">
+                    <img src="{% static 'personlogo.png' %}" alt="Image cannot be displayed" class="doctorsimages">
+                </section>
+                <section class="doctorsmid">
+                    <p>Ms. Abc</p>
+                    <p>Radiologist</p>
+                </section>
+                <section class="doctorsdown">
+                    <img src="{% static 'gmaillogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                    <img src="{% static 'instagramlogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                    <img src="{% static 'twitterXlogo.png' %}" alt="Image cannot be displayed" class="socialmediaimages">
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,681 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+.navbar{
+    width: 100vw;
+    height: 8vh;
+    top: 0;
+    background-color: rgb(78, 172, 227);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+.navbar .navbarleft{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .navbarleft h1{
+    color: #000;
+}
+.navbar .navbarright{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .navbarright .navbarrightleft{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .navbarright .navbarrightleft ul{
+    width: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 8px;
+}
+.navbar .navbarright .navbarrightleft ul li{
+    padding: 4px;
+}
+.navbar .navbarright .navbarrightleft ul li a{
+    color: #000;
+}
+.navbar .navbarright .navbarrightleft ul li:hover{
+    background-color: #fff;
+    border-radius: 2px;
+}
+.navbar .navbarright .navbarrightright{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .navbarright .navbarrightright .hamburger{
+    display: none;
+}
+.navbar .navbarright .navbarrightright .hamburger .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+}
+.homepage{
+    height: 92vh;
+    margin-top: 8vh;
+    display: flex;
+}
+.homepage .homepageleft{
+    width: 50vw;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homepage .homepageleft video{
+    height: 98%;
+    width: 100%;
+}
+.homepage .homepageright{
+    width: 50vw;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homepage .homepageright h1{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(78, 172, 227);
+}
+.homepage .homepageright p{
+    padding: 8px;
+}
+.homepage .homepageright .appointment{
+    padding: 8px;
+    background-color: #fff;
+    border: 2px solid rgb(78, 172, 227);
+    border-radius: 4px;
+    color: rgb(78, 172, 227);
+}
+.homepage .homepageright .appointment:hover{
+    background-color: rgb(78, 172, 227);
+    color: #fff;
+}
+.aboutuspage{
+    height: 92vh;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+}
+.aboutuspage .aboutuspageup{
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.aboutuspage .aboutuspageup h1{
+    font-family: 'Noto Serif', serif;
+    font-size: xx-large;
+}
+.aboutuspage .aboutuspageup h1.headingsecondpart{
+    display: flex;
+    flex-direction: column;
+    color: rgb(78, 172, 227);
+}
+.aboutuspage .aboutuspagedown{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.aboutuspage .aboutuspagedown .aboutuspagedownleft{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutuspage .aboutuspagedown .aboutuspagedownleft video{
+    height: 98%;
+    width: 100%;
+}
+.aboutuspage .aboutuspagedown .aboutuspagedownright{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.aboutuspage .aboutuspagedown .aboutuspagedownright h1{
+    font-weight: bolder;
+    font-size: xx-large;
+    padding: 2px;
+    color: rgb(78, 172, 227);
+}
+.aboutuspage .aboutuspagedown .aboutuspagedownright p{
+    padding: 2px;
+}
+.servicespage{
+    height: 92vh;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+}
+.servicespage .servicespageup{
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.servicespage .servicespageup h1{
+    font-family: 'Noto Serif', serif;
+    font-size: xx-large;
+}
+.servicespage .servicespageup h1.headingsecondpart{
+    color: rgb(78, 172, 227);
+}
+.servicespage .servicespagedown{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 2px;
+}
+.servicespage .servicespagedown .services{
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(78, 172, 227);
+    display: flex;
+    flex-direction: column;
+}
+.servicespage .servicespagedown .services .servicesup{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.servicespage .servicespagedown .services .servicesup .servicesimage{
+    height: 80px;
+}
+.servicespage .servicespagedown .services .servicesdown{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.servicespage .servicespagedown .services .servicesdown h1.serviceinfo{
+   font-size: large;
+   color: rgb(78, 172, 227);
+}
+.servicespage .servicespagedown .services .servicesdown .learnmore:hover{
+    background-color: rgb(78, 172, 227);
+    color: #fff;
+}
+.doctorspage{
+    height: 92vh;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+}
+.doctorspage .doctorspageup{
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.doctorspage .doctorspageup h1{
+    font-family: 'Noto Serif', serif;
+    font-size: xx-large;
+}
+.doctorspage .doctorspageup h1.headingsecondpart{
+    color: rgb(78, 172, 227);
+}
+.doctorspage .doctorspagedown{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    justify-content: space-around;
+    row-gap: 2px;
+}
+.doctorspage .doctorspagedown .doctors{
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(78, 172, 227);
+    display: flex;
+    flex-direction: column;
+}
+.doctorspage .doctorspagedown .doctors .doctorsup{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.doctorspage .doctorspagedown .doctors .doctorsup .doctorsimages{
+    height: 70px;
+}
+.doctorspage .doctorspagedown .doctors .doctorsmid{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.doctorspage .doctorspagedown .doctors .doctorsdown{
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.doctorspage .doctorspagedown .doctors .doctorsdown .socialmediaimages{
+    height: 25px;
+    width: 25px;
+}
+/* Appointment Booking */
+body.appointmentbody{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.appointmentbookingpage{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50vw;
+}
+.appointmentbookingpage video{
+    height: 100%;
+    width: 100%;
+}
+.appointmentbookingsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50vw;
+}
+.appointmentbookingsection .formarea{
+    height: 400px;
+    width: 400px;
+    border: 2px solid rgb(78, 172, 227);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.appointmentbookingsection .formarea .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.appointmentbookingsection .formarea .heading h1{
+    font-size: xx-large;
+}
+.appointmentbookingsection .formarea label{
+    color: rgb(78, 172, 227);
+}
+.appointmentbookingsection .secondhalfheading{
+    color: rgb(78, 172, 227);
+}
+.appointmentbookingsection .formarea input{
+    height: 24px;
+    border: none;
+    border-bottom: 2px solid rgb(78, 172, 227);
+    outline: none;
+    font-size: medium;
+    width: 250px;
+}
+.appointmentbookingsection .formarea #doaid{
+    height: 24px;
+    width: 100%;
+}
+.appointmentbookingsection .formarea input[type="number"]::-webkit-inner-spin-button{
+        display: none;
+}
+.appointmentbookingsection .bookappointment {
+    padding: 8px;
+    background-color: #fff;
+    border: 2px solid rgb(78, 172, 227);
+    border-radius: 4px;
+    color: rgb(78, 172, 227);
+}
+.appointmentbookingsection .bookappointment:hover{
+    background-color: rgb(78, 172, 227);
+    color: #fff;
+}
+/* View details page*/
+.viewdetailsbody{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.heading h1{
+    font-size: xx-large;
+    color: rgb(78, 172, 227);
+}
+table.patientdetailstable{
+    border: 2px solid black;
+    border-collapse: collapse;  
+    text-align: center;
+}
+.patientstable tr,td,th{
+    border: 2px solid black;  
+    padding: 8px;
+}
+button.btnicon{
+    border: none;
+    background-color: #fff;
+}
+.dicon{
+    height: 32px;
+    width: 32px;
+}
+/* update page */
+section.updatedetailsbody{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.updatedetailsup{
+    height: 10vh;
+    background-color: red;
+}
+.updatedetailsdown{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formpart{
+    border: 2px solid rgb(78, 172, 227);
+    height: 64%;
+    width: 64%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formpart input{
+    height: 24px;
+    border: none;
+    border-bottom: 2px solid rgb(78, 172, 227);
+    outline: none;
+    font-size: medium;
+    width: 250px;
+}
+.formpart input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}
+.formpart .updatedetailsbtn{
+    padding: 8px;
+    background-color: #fff;
+    border: 2px solid rgb(78, 172, 227);
+    border-radius: 4px;
+    color: rgb(78, 172, 227);
+}
+.formpart .updatedetailsbtn:hover{
+    background-color: rgb(78, 172, 227);
+    color: #fff;
+}
+
+
+
+
+/* FOR MOBILES */
+@media (max-width: 768px) {
+    .navbar{
+        width: 100vw;
+        height: 8vh;
+        top: 0;
+        background-color: rgb(78, 172, 227);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: fixed;
+        z-index: 999;
+    }
+    .navbar .navbarleft{
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar .navbarleft h1{
+        color: #000;
+        font-size: x-small;
+    }
+    .navbar .navbarright{
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    .navbar .navbarright .navbarrightleft ul{
+        display: inline-flex;
+        position: absolute;
+        flex-direction: column;
+        top: 8vh;
+        width: 100vw;
+        left: 0;
+        background-color: rgb(78, 172, 227);
+    }
+    .navbar .navbarright .navbarrightleft ul li{
+        display: flex;
+        width:100%;
+    }
+    .navbar .navbarright .navbarrightleft ul li a{
+        display: flex;
+        padding: 4px;
+        width: 100%;
+        line-height: 64px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+
+    }
+    .navbar .navbarright .navbarrightleft ul li a:hover{
+        background-color: #fff;
+        border-radius: 2px;
+    }
+    .navbar .navbarright .navbarrightright{
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar .navbarright .navbarrightright .hamburger{
+        display: block;
+        padding-right: 12px;
+    }
+    .navbar .navbarright .navbarrightright .hamburger .bar{
+        display: block;
+        width: 24px;
+        height: 3px;
+        background-color: #fff;
+    }
+    .homepage{
+        height: 92vh;
+        margin-top: 8vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .homepage .homepageleft{
+        width: 100vw;
+        height: 46vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .homepage .homepageright{
+        width: 100vw;
+        height: 46vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .homepage .homepageright h1{
+        padding: 8px;
+    }
+    .homepage .homepageright p{
+        padding: 8px;
+    }
+    .homepage .homepageright .appointment{
+        padding: 16px;
+        background-color: #fff;
+        border: 2px solid rgb(78, 172, 227);
+        border-radius: 4px;
+        color: rgb(78, 172, 227);
+    }
+    .homepage .homepageright .appointment:hover{
+        background-color: rgb(78, 172, 227);
+        color: #fff;
+    }
+    .aboutuspage{
+        height: 92vh;
+        margin-top: 8vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutuspage .aboutuspageup{
+        height: 12vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .aboutuspage .aboutuspageup h1{
+        font-family: 'Noto Serif', serif;
+        font-size: xx-large;
+    }
+    .aboutuspage .aboutuspageup h1.headingsecondpart{
+        display: flex;
+        flex-direction: column;
+        color: rgb(78, 172, 227);
+    }
+    .aboutuspage .aboutuspagedown{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutuspage .aboutuspagedown .aboutuspagedownleft{
+        width: 100vw;
+        height: 46vh;
+        display: flex;
+    }
+    .aboutuspage .aboutuspagedown .aboutuspagedownleft .aboutusimage{
+        height: 95%;
+    }
+    .aboutuspage .aboutuspagedown .aboutuspagedownright{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutuspage .aboutuspagedown .aboutuspagedownright h1{
+        font-weight: bolder;
+        font-size: xx-large;
+        padding: 8px;
+    }
+    .aboutuspage .aboutuspagedown .aboutuspagedownright .mainpart{
+        font-size: larger;
+    }
+    .aboutuspage .aboutuspagedown .aboutuspagedownright p{
+        padding: 8px;
+    }
+    .servicespage .servicespagedown{
+        height: 80vh;
+        display: grid;
+        grid-template-columns: repeat(1,200px);
+        justify-content: space-around;
+        row-gap: 2px;
+    }
+    .doctorspage{
+        height: 92vh;
+        margin-top: 8vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .doctorspage .doctorspageup{
+        height: 12vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .doctorspage .doctorspageup h1{
+        font-family: 'Noto Serif', serif;
+        font-size: xx-large;
+    }
+    .doctorspage .doctorspageup h1.headingsecondpart{
+        color: rgb(78, 172, 227);
+    }
+    .doctorspage .doctorspagedown{
+        height: 80vh;
+        display: grid;
+        grid-template-columns: repeat(1,200px);
+        justify-content: center;
+        row-gap: 2px;
+    }
+    .doctorspage .doctorspagedown .doctors{
+        height: 200px;
+        width: 200px;
+        border: 2px solid rgb(78, 172, 227);
+        display: flex;
+        flex-direction: column;
+    }
+    .doctorspage .doctorspagedown .doctors .doctorsup{
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .doctorspage .doctorspagedown .doctors .doctorsup .doctorsimages{
+        height: 70px;
+    }
+    .doctorspage .doctorspagedown .doctors .doctorsmid{
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .doctorspage .doctorspagedown .doctors .doctorsdown{
+        height: 20%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .doctorspage .doctorspagedown .doctors .doctorsdown .socialmediaimages{
+        height: 25px;
+        width: 25px;
+    }
+    .appointmentbookingpage{
+        display: none;
+    }
+    .appointmentbookingsection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+}

@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- CSS link  -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Update</title>
+</head>
+<body>
+    <section class="updatedetailsbody">
+        <section class="updatedetailsup">
+            <h1>Update the details</h1>
+        </section>
+        <section class="updatedetailsdown">
+            <section class="formpart">
+                <!-- Only specific data is updated -->
+                <form action="/update/{{edit.id}}" method="post"> 
+                    {% csrf_token %}
+                        <label for="fname">First Name</label>
+                        <section>
+                            <input type="text" name="firstname" id="firstnameid" class="inputclass" value="{{edit.fname}}">
+                        </section>
+                        <br>
+                        <label for="lname">Lastname</label>
+                        <section>
+                            <input type="text" name="lastname" id="lastnameid" class="inputclass" value="{{edit.lname}}">
+                        </section>
+                        <br>
+                        <label for="age">Age</label>
+                        <section>    
+                            <input type="number" name="age" id="ageid" class="inputclass" value="{{edit.age}}">
+                        </section>
+                        <br>
+                        <section>
+                            <a href="viewdetails/updatedetails/{{p.id}}"><button class="updatedetailsbtn">Update</button></a>
+                        </section>
+                </form>
+            </section>
+        </section>    
+    </section>
+</body>
+</html> 
