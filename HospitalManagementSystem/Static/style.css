@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style-type: none;
     scroll-behavior: smooth;
+    font-family: 'Noto Serif', serif;
 }
 .navbar{
     width: 100vw;
@@ -127,7 +128,6 @@
     gap: 16px;
 }
 .aboutuspage .aboutuspageup h1{
-    font-family: 'Noto Serif', serif;
     font-size: xx-large;
 }
 .aboutuspage .aboutuspageup h1.headingsecondpart{
@@ -181,7 +181,6 @@
     gap: 16px;
 }
 .servicespage .servicespageup h1{
-    font-family: 'Noto Serif', serif;
     font-size: xx-large;
 }
 .servicespage .servicespageup h1.headingsecondpart{
@@ -239,7 +238,6 @@
     gap: 16px;
 }
 .doctorspage .doctorspageup h1{
-    font-family: 'Noto Serif', serif;
     font-size: xx-large;
 }
 .doctorspage .doctorspageup h1.headingsecondpart{
@@ -367,7 +365,7 @@ body.appointmentbody{
     flex-direction: column;
     justify-content: center;
 }
-.heading h1{
+.heading{
     font-size: xx-large;
     color: rgb(78, 172, 227);
 }
@@ -397,7 +395,12 @@ section.updatedetailsbody{
 }
 .updatedetailsup{
     height: 10vh;
-    background-color: red;
+    display: flex;
+    align-items: center;
+}
+.updateheading{
+    font-size: xx-large;
+    color: rgb(78, 172, 227);
 }
 .updatedetailsdown{
     height: 90vh;
@@ -423,6 +426,9 @@ section.updatedetailsbody{
 }
 .formpart input[type="number"]::-webkit-inner-spin-button{
     display: none;
+}
+.formpart label{
+    color: rgb(78, 172, 227);
 }
 .formpart .updatedetailsbtn{
     padding: 8px;
@@ -563,7 +569,6 @@ section.updatedetailsbody{
         gap: 16px;
     }
     .aboutuspage .aboutuspageup h1{
-        font-family: 'Noto Serif', serif;
         font-size: xx-large;
     }
     .aboutuspage .aboutuspageup h1.headingsecondpart{
@@ -622,7 +627,6 @@ section.updatedetailsbody{
         gap: 16px;
     }
     .doctorspage .doctorspageup h1{
-        font-family: 'Noto Serif', serif;
         font-size: xx-large;
     }
     .doctorspage .doctorspageup h1.headingsecondpart{

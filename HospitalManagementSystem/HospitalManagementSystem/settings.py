@@ -70,7 +70,7 @@ DATABASES = {
         'HOST': '127.0.0.1', # host_address
         'PORT': '3306', # mysql_port_number
         'USER': 'root',# user_name
-        'PASSWORD': 'Leel@v@thi123' # database_password
+        'PASSWORD': '' # database_password
     }
 }
 
